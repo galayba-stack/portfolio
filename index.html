@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <!--    <meta name="format-detection" content="telephone=no" />-->
 <!--    <meta name="format-detection" content="address=no">-->
-    <title>Halaiba</title>
+    <title>Olha H.</title>
     <meta name="description"
           content="">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js" type="module"></script>
 </head>
@@ -17,24 +20,101 @@
 <body>
 <header>
     <nav>
-        <div><a href="">Portfolio</a></div>
-        <div><a href="#home">Home</a>
+        <div class="nav-left"><a class="nav-title" href="">Portfolio</a></div>
+        <div class="nav-right"><a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a></div>
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <img id="theme-icon" src="img/day.png" alt="Theme icon" />
+        </button>
+
+
     </nav>
 </header>
 <main>
-    <section id="home"></section>
-    <section id="about"></section>
-    <section id="skills"></section>
+    <section id="home">
+        <div class="main-left">
+            <div class="main-left__content">
+                <p>👋 Hello, I'm</p>
+                <h1>Olha Halaiba</h1>
+                <div class="dropping-texts">
+                    <div>Full-Stack Developer</div>
+                    <div>Front-End Developer</div>
+                    <div>Wordpress Specialist</div>
+                    <div>Back-End Developer</div>
+                </div>
+                <p class="main-left__content-text">I create stunning digital experiences that combine beautiful design with powerful functionality. Specializing in modern web technologies and scalable solutions.</p>
+            </div>
+            <div class="main-left__blocks">
+                <div>
+                    <p class="rainbow-text">3+</p>
+                    <p class="normal-text">Years Experience</p>
+                </div>
+                <div>
+                    <p class="rainbow-text">30+</p>
+                    <p class="normal-text">Projects Completed</p>
+                </div>
+                <div>
+                <p class="rainbow-text">3+</p>
+                <p class="normal-text">Years Experience</p>
+            </div>
+
+            </div>
+            <div class="main-left__buttons">
+                <a href="#projects" class="main-left__buttons-work">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path fill="#ffffff" stroke-width="10" d="M512 128L128 128C110.3 128 96 142.3 96 160L96 384L64 384L64 160C64 124.7 92.7 96 128 96L512 96C547.3 96 576 124.7 576 160L576 384L544 384L544 160C544 142.3 529.7 128 512 128zM87.1 512L552.9 512C580.9 512 604.1 491.1 607.6 464L32.5 464C36 491.1 59.1 512 87.2 512zM0 456.9C0 443.1 11.1 432 24.9 432L615.1 432C628.8 432 640 443.1 640 456.9C640 505 601 544 552.9 544L87.1 544C39 544 0 505 0 456.9z"/>
+                        </svg>
+                    </span>
+                    View My Work
+                </a>
+                <a href="" class="main-left__buttons-download">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+
+                            <path d="M5.29 11.29C5.19627 11.383 5.12188 11.4936 5.07111 11.6154C5.02034 11.7373 4.9942 11.868 4.9942 12C4.9942 12.132 5.02034 12.2627 5.07111 12.3846C5.12188 12.5064 5.19627 12.617 5.29 12.71L8.29 15.71C8.38296 15.8037 8.49356 15.8781 8.61542 15.9289C8.73728 15.9797 8.86799 16.0058 9 16.0058C9.13201 16.0058 9.26272 15.9797 9.38458 15.9289C9.50644 15.8781 9.61704 15.8037 9.71 15.71L12.71 12.71C12.8983 12.5217 13.0041 12.2663 13.0041 12C13.0041 11.7337 12.8983 11.4783 12.71 11.29C12.5217 11.1017 12.2663 10.9959 12 10.9959C11.7337 10.9959 11.4783 11.1017 11.29 11.29L10 12.59V1C10 0.734784 9.89464 0.48043 9.70711 0.292893C9.51957 0.105357 9.26522 0 9 0C8.73478 0 8.48043 0.105357 8.29289 0.292893C8.10536 0.48043 8 0.734784 8 1V12.59L6.71 11.29C6.61704 11.1963 6.50644 11.1219 6.38458 11.0711C6.26272 11.0203 6.13201 10.9942 6 10.9942C5.86799 10.9942 5.73728 11.0203 5.61542 11.0711C5.49356 11.1219 5.38296 11.1963 5.29 11.29ZM15 7H13C12.7348 7 12.4804 7.10536 12.2929 7.29289C12.1054 7.48043 12 7.73478 12 8C12 8.26522 12.1054 8.51957 12.2929 8.70711C12.4804 8.89464 12.7348 9 13 9H15C15.2652 9 15.5196 9.10536 15.7071 9.29289C15.8946 9.48043 16 9.73478 16 10V17C16 17.2652 15.8946 17.5196 15.7071 17.7071C15.5196 17.8946 15.2652 18 15 18H3C2.73478 18 2.48043 17.8946 2.29289 17.7071C2.10536 17.5196 2 17.2652 2 17V10C2 9.73478 2.10536 9.48043 2.29289 9.29289C2.48043 9.10536 2.73478 9 3 9H5C5.26522 9 5.51957 8.89464 5.70711 8.70711C5.89464 8.51957 6 8.26522 6 8C6 7.73478 5.89464 7.48043 5.70711 7.29289C5.51957 7.10536 5.26522 7 5 7H3C2.20435 7 1.44129 7.31607 0.87868 7.87868C0.316071 8.44129 0 9.20435 0 10V17C0 17.7956 0.316071 18.5587 0.87868 19.1213C1.44129 19.6839 2.20435 20 3 20H15C15.7956 20 16.5587 19.6839 17.1213 19.1213C17.6839 18.5587 18 17.7956 18 17V10C18 9.20435 17.6839 8.44129 17.1213 7.87868C16.5587 7.31607 15.7956 7 15 7Z" fill="#6563FF"/></svg>
+                    </span>
+                    Download Resume</a>
+            </div>
+            <div class="main-left__social">
+                <a><img src="img/github"></a>
+            </div>
+        <div></div>
+        </div>
+        <div class="main-right">
+            <dotlottie-wc
+                    src="https://lottie.host/37ebbc1f-e85b-4ed2-a001-95a40bc2a2fa/fYaIRDMuJ2.json"
+                    autoplay
+                    loop></dotlottie-wc>
+<!--            <img src="img/"-->
+        </div>
+    </section>
+    <section id="about">
+        About
+    </section>
+    <section id="skills">
+        Skills
+    </section>
     <section id="projects"></section>
     <section id="experience"></section>
     <section id="contact">
-        <dotlottie-wc src="https://lottie.host/fa3820c2-70f1-4d49-af37-dac483a56249/h4OPV5Mx78.lottie" style="width: 300px;height: 300px" autoplay loop></dotlottie-wc>
+<!--        <dotlottie-wc src="https://lottie.host/fa3820c2-70f1-4d49-af37-dac483a56249/h4OPV5Mx78.lottie" style="width: 300px;height: 300px" autoplay loop></dotlottie-wc>-->
     </section>
 </main>
+
+<div class="dot-navigation">
+    <a href="#home" class="dot" title="Home"></a>
+    <a href="#about" class="dot" title="About"></a>
+    <a href="#skills" class="dot" title="Skills"></a>
+    <a href="#projects" class="dot" title="Projects"></a>
+    <a href="#experience" class="dot" title="Experience"></a>
+    <a href="#contact" class="dot" title="Contact"></a>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
